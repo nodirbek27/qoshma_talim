@@ -4,7 +4,6 @@ import { ReactComponent as phone } from '../../assets/icons/phone.svg';
 import { ReactComponent as cardMaps } from '../../assets/icons/cardMaps.svg';
 
 const Container = styled.div`
-  height: 417px;
   background: #0d263b;
 
   display: flex;
@@ -21,7 +20,7 @@ const Container = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 235px;
+  max-width: 300px;
   width: 100%;
 `;
 
@@ -50,8 +49,8 @@ Content.Item = styled.div`
 const Icon = styled.div``;
 Icon.Email = styled(email)`
   margin-right: 21px;
-  width: 54px;
-  height: 54px;
+  width: 24px;
+  height: 24px;
   & path {
     fill: white;
   }
@@ -63,7 +62,12 @@ Icon.Phone = styled(phone)`
   }
 `;
 Icon.Maps = styled(cardMaps)`
-  margin-bottom: 24px;
+  margin-right: 21px;
+  width: 54px;
+  height: 54px;
+  & path {
+    fill: white;
+  }
 `;
 
 export { Container, Content, Icon };

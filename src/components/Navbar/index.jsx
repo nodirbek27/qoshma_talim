@@ -75,7 +75,7 @@ export const Home = () => {
               </Dropdown>
             ) : (
               <Button onClick={onClick} type="dark">
-                Sign In
+                Sign in
               </Button>
             )}
           </Section>
