@@ -37,11 +37,11 @@ export const Signin = () => {
 
   return (
     <Content>
-      <div className="subTitle">Sing in</div>
+      <div className="subTitle">Kirish</div>
       <Input onChange={onChange} placeholder="email" type="email" />
-      <Input onChange={onChange} placeholder="password" type="password" />
+      <Input onChange={onChange} placeholder="parol" type="password" />
       <Button width="%" onClick={onSubmit}>
-        Login
+        Kirish
       </Button>
     </Content>
   );

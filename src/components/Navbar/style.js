@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-
-import logoImg from "../../assets/icons/logo.png";
+// import logoImg from "../../assets/icons/logo.png";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
 const Main = styled.div`
   display: flex;
   justify-content: center;
@@ -17,39 +17,48 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   color: #ffff;
-  padding: var(--padding);
   height: 64px;
-
+  padding: 0 10px;
   font-size: 16px;
-
   width: 100%;
   max-width: 1440px;
+
+  @media (max-width: 1440px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 1280px) {
+    padding: 0 20px;
+  }
 `;
 
 const Section = styled.div`
   display: flex;
   align-items: center;
-  cursor: ${({ logo }) => logo && "pointer"};
+  cursor: ${({ logo }) => (logo ? "pointer" : "default")};
+  color: #ffff;
 
-  .active {
+  & > h3 {
+    margin-bottom: 0;
+  }
+  & .active {
     color: #b8ff06;
   }
 `;
 
-const Logo = styled(logoImg)`
+const Logo = styled.img`
   width: 30px;
   margin-right: 12px;
-  & path {
-    fill: #ffff;
-  }
 `;
 
-const Link = styled(NavLink)`
+const NavLinkStyled = styled(NavLink)`
   text-decoration: none;
   padding: 0 32px;
   color: #ffff;
+
+  &.active {
+    color: #b8ff06;
+  }
 `;
 
 const Menu = styled.div`
@@ -65,13 +74,15 @@ const Menu = styled.div`
 `;
 
 Menu.Item = styled.div`
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 20px;
   cursor: pointer;
   color: #000000;
+
+  &:hover {
+    color: #b8ff06;
+  }
 `;
 
-export { Container, Menu, Wrapper, Section, Logo, Link, Main };
+export { Container, Menu, Wrapper, Section, Logo, NavLinkStyled as Link, Main };

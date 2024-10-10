@@ -34,13 +34,13 @@ export const Recommended = () => {
 
   return (
     <Content>
-      <div className="subTitle">Sing Up</div>
+      <div className="subTitle">Ro'yxatdan o'tish</div>
       <Input onChange={onChange} placeholder="email" type="email" />
-      <Input onChange={onChange} placeholder="firstname" type="text" />
-      <Input onChange={onChange} placeholder="lastname" type="text" />
-      <Input onChange={onChange} placeholder="password" type="password" />
+      <Input onChange={onChange} placeholder="ism" type="text" />
+      <Input onChange={onChange} placeholder="familiya" type="text" />
+      <Input onChange={onChange} placeholder="parol" type="password" />
       <Button width="%" onClick={onSubmit}>
-        Login
+        Ro'yxatdan o'tish
       </Button>
     </Content>
   );

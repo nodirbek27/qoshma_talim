@@ -18,7 +18,7 @@ export const navbar = [
         <HomePage />{" "}
       </React.Suspense>
     ),
-    title: "Home",
+    title: "Asosiy",
     path: "/home",
     private: false,
     hidden: false,
@@ -30,7 +30,7 @@ export const navbar = [
         <NewsPage />{" "}
       </React.Suspense>
     ),
-    title: "News",
+    title: "Yangiliklar",
     path: "/news",
     private: false,
     hidden: false,
@@ -42,7 +42,7 @@ export const navbar = [
         <GalleryPage />{" "}
       </React.Suspense>
     ),
-    title: "Gallery",
+    title: "Gallerya",
     path: "/gallery",
     private: false,
     hidden: false,

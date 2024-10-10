@@ -9,13 +9,13 @@ export const Register = () => {
         defaultActiveKey="1"
         items={[
           {
-            label: `Sign in`,
+            label: `Kirish`,
             key: "1",
             children: <Signin />,
           },
 
           {
-            label: `Sign up`,
+            label: `Ro'yxatdan o'tish`,
             key: "2",
             children: <Signup />,
           },
